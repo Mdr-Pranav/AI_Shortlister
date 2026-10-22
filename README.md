@@ -103,11 +103,10 @@ Applicants/
    pip install -q -U google-generativeai pymupdf python-docx
    ```
 
-2. Configure your API key:
+2. Configure your API key — the notebook reads `GEMINI_API_KEY`, never a hardcoded value:
 
-   ```python
-   API_KEY = "your_gemini_api_key_here"
-   ```
+   - **Colab:** open the 🔑 *Secrets* panel, add `GEMINI_API_KEY`, and enable notebook access
+   - **Local Jupyter:** `export GEMINI_API_KEY=your_key` before starting Jupyter
 
 3. Set up your base folder path:
 
